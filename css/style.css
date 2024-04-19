@@ -259,12 +259,14 @@ header {
 .imagem-preco{
     display: flex;
     width: 50%;
-    max-height: auto;
+    height: 500px;
     align-items: center;
     justify-content: center;
-    background-image: url(imagens/35294599_8292847.svg);
-    background-repeat: no-repeat;
-    margin-left: 3%;
+    margin-left: 45%;
+}
+.imagem-preco img{
+    display: flex;
+    height: 400px;
 }
 #teste{
     display: flex;
@@ -281,7 +283,7 @@ header {
     align-items: flex-end;
     width: 40%;
     max-height: auto;
-    margin-left: 3%;
+    margin-left: 20%;
     margin-top: 5%;
     
 }
@@ -314,13 +316,16 @@ header {
 .imagem-teste{
     display: flex;
     width: 50%;
+    height: 500px;
     max-height: auto;
     align-items: center;
     justify-content: center;
-    background-image: url(imagens/12084746_20943890.svg);
-    background-repeat: no-repeat;
-    margin-left: 3%;
+    margin-left: 30%;
     mix-blend-mode: multiply;
+}
+.imagem-teste img{
+    display: flex;
+    height: 450px;
 }
 .btn-teste{
     color: #FDFDFD;
