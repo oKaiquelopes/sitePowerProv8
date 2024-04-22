@@ -15,7 +15,7 @@ header {
     align-items: center;
     position: fixed;
     padding: 15px 15px;
-    background-color: rgba(59, 94, 237, 1);
+    background-color:#1e6d9b;
     display: flex;
     width: 100%;
 }
@@ -34,7 +34,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 380vh;
     background-color: rgba(247, 252, 254, 1);
 }
 .left-menu{
@@ -42,7 +42,7 @@ header {
     flex-direction: column;
     width: 30%;
     max-height: auto;   
-
+    position: fixed;
 }
 .left-menu-links{
     display: flex;
@@ -90,8 +90,9 @@ header {
     flex-direction: column;
     width: 70%;
     max-height: auto;
+    margin-left: 30%;
 }
-.right-content h1{
+.right-content-title{
     color: #1e1e1e;
     font-family: 'Montserrat';
     font-size: 1.6rem;
@@ -113,9 +114,36 @@ header {
     font-weight: 500;
     color: #0a7dc0;
 }
+.p-1right-content{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1e1e1e;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.divisao-right-content{
+    display: flex;
+    width: 20%;
+    height: 5px;
+    border: none;
+    background-color: #175274;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.p-2right-content{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1e1e1e;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
 .btn-download{
     font-family: 'Montserrat';
-    font-weight: 600;
+    font-weight: 500;
     color: #fdfdfd;
     font-size: 1rem;
     text-decoration: none;
@@ -127,9 +155,133 @@ header {
     justify-content: center;
     display: flex;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .btn-download:hover{
+    background-color: #175274;
+    transition: all 0.3s ease-out;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: auto;
+    margin-top: 5%;
+}
+.title-sobre-right{
+    font-family: "Montserrat";
+    color: #1e1e1e;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 5%;
+}
+.subtitle-sobre-right{
+    font-family: "Montserrat";
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.paragrafo-sobre-right{
+    font-family: "Montserrat";
+    color: #302f2f;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+/* Estilos para a lista de benefícios */
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 3%;
+    width: 90%;
+    max-height: auto;
+    margin-left: 3%;
+  }
+  
+  /* Estilos para cada item da lista */
+  .benefits-list li {
+    background-color: #FDFDFD;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Estilos para os detalhes do benefício (inicialmente ocultos) */
+  .benefit-details {
+    display: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  /* Estilos para o título do benefício */
+  .benefit-title {
+    font-weight: 400;
+    color: #1E1E1E;
+    font-family: 'Space Grotesk';
+  }
+  
+  /* Estilos para o título do benefício quando o item está expandido */
+  .benefits-list li.active .benefit-title {
+    color: #1E1E1E;
+    font-weight: 500;
+  }
+  
+  /* Estilos para os detalhes do benefício quando o item está expandido */
+  .benefits-list li.active .benefit-details {
+    display: block;
+  }
+  /* Adicione estilos ao botão de alternância */
+.confirm-sobre{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.btn-downloadCheck{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-height: auto;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+}
+.checkbox-label{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1E1E1E;
+    margin-left: 1%;
+}
+.btn-download-check{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #fdfdfd;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #1e6d9b;
+    border-radius: 5px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 1%;
+    border: none;
+    cursor: pointer;
+}
+.btn-download-check:hover{
     background-color: #175274;
     transition: all 0.3s ease-out;
 }
