@@ -70,7 +70,7 @@ meuBotao.addEventListener('click', function() {
     // Se o checkbox estiver marcado, define o caminho do arquivo relativo ao href do botão
     meuBotao.href = 'PowerProSitev2/PowerPro.rar.zip';
   } else {
-    alert('Por favor, autorize clicando na caixa de seleção antes de prosseguir.');
+    alert('Para prosseguir, confirme que concorda com os termos de uso do PowerPro.');
   }
 });
 
