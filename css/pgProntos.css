@@ -13,13 +13,14 @@ body{
 }
 header {
     align-items: center;
+    background-color:#1e6d9b;
 }
 .logo-header{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 55px;
-    margin-left: 70%;
+    margin-left: 65%;
 }
 .logo-header img{
     height: 55px;
@@ -46,7 +47,7 @@ header {
     margin: 0 20px;
 }
 .nav-link {
-    color: #09142D;
+    color: #fdfdfd;
     font-family: 'Montserrat';
     font-size: 1rem;
     font-style: normal;
@@ -60,8 +61,9 @@ header {
     font-weight: 500;
     border: none;
     cursor: pointer;
-    background-color: #FDFDFD;
+    background-color:#1e6d9b;
     border-radius: 5px;
+    color: #FDFDFD;
 }
 .dropdown {
     position: relative;
