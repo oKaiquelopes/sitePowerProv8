@@ -120,84 +120,57 @@ header {
     font-weight: 500;
     line-height: normal;
 }
-.programas{
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
-    max-height: auto;
-    width: 100%;
-}
-.cards{
+.cards-programas{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    max-height: auto;
+    margin-top: 3%;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
-    max-height: auto;
 }
-.card{
+.card-programa{
     display: flex;
     flex-direction: column;
+    width: 25%;
     max-height: auto;
-    width: 30%;
-    border-radius: 1.25rem;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
-.card-img{
+.card-programa-img{
     display: flex;
-    background-color: #D9D9D9;
     width: 100%;
     height: 200px;
-    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
 }
-.card h1{
-    color: #00033D;
-    font-family: "Space Grotesk";
-    font-size: 1.2rem;
-    font-style: normal;
+.card-programa-img img{
+    display: flex;
+    height: 200px;
+    border-radius: 10px;
+}
+.card-programa-title{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #1e1e1e;
+    margin-top: 3%;
+}
+.card-programa-btn{
+    font-family: "Montserrat";
     font-weight: 500;
-    line-height: normal;
-    margin-top: 5%;
-    margin-left: 2%;
-}
-.desc-card{
-    color: #09142D;
-    font-family: "Space Grotesk";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 5%;
-    margin-left: 2%;
-}
-.preco-card{
-    color: #00033D;
-    font-family: "Space Grotesk";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: 5%;
-    margin-left: 2%;
-}
-.card a{
     color: #FDFDFD;
-    font-family: "Space Grotesk";
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    font-size: 1.1rem;
     text-decoration: none;
-    text-align: center;
-    border-radius: 0.3125rem;
-    background: #3B5EED;
-    padding: 10px 15px;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background: #175274;
+    border-radius: 5px;
+    margin-top: 3%;
 }
-.card a:hover{
-    background: #2f4bbb;
+.card-programa-btn:hover{
+    background: #10374e;
     transition: all 0.3s ease-out;
 }
