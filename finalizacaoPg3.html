@@ -30,26 +30,20 @@
 
     <div class="checkout-container">
         <div class="product-details">
-            <img src="" alt="Nome do Produto">
+            <img src="css/imagens/Captura de tela 2024-04-24 133707.png" alt="Nome do Produto">
             <div class="info">
-                <h2 class="titulo-product">Nome do Programa</h2>
-                <p class="desc-product">Descrição do programa e informações adicionais.<br>Descrição do programa e informações adicionais.<br>Descrição do programa e informações adicionais.</p>
-                <p class="preco-product">Preço: <span>R$ 360,00</span></p>
+                <h2 class="titulo-product">Sistema Vendas e estoque</h2>
+                <p class="desc-product">Gerencie suas estufas com facilidade com o PowerPro. Controle cargas, estoque e mais para uma produção agrícola eficiente. Entre em contato para saber mais.</p>
+                <p class="preco-product">Preço: <span>R$ 150,00</span></p>
             </div>
         </div>
 
         <div class="payment-options">
-            <h3 class="title-pagament">Opções de Pagamento</h3>
-            <label>
-                <input type="radio" name="payment" value="pix">
-                PIX (Aprovação Imediata)
-            </label>
-           
-            <label>
-                <input type="radio" name="payment" value="boleto">
-                Boleto Bancário (Até 3 dias úteis)
-            </label>
-            <button class="checkout-button">Finalizar Compra</button>
+            <h3 class="title-pagament">Para saber mais, entre em contato</h3>
+            <a href="https://w.app/knobtecnologia" class="checkout-button" target="_blank">
+                <img src="css/imagens/icons/whatsapp.png" alt="WhatsApp">
+                Entre em contato pelo WhatsApp
+            </a>
         </div>
     </div>
     <script>
@@ -80,47 +74,6 @@ function toggleDropdown() {
       }
     }
 };
-
-
-document.addEventListener('DOMContentLoaded', function () {
-        const paymentButton = document.querySelector('.checkout-button');
-        
-        paymentButton.addEventListener('click', function () {
-            const selectedPayment = document.querySelector('input[name="payment"]:checked');
-
-            if (selectedPayment) {
-                const paymentMethod = selectedPayment.value;
-                redirectToPaymentScreen(paymentMethod);
-            } else {
-                alert('Selecione uma opção de pagamento antes de finalizar a compra.');
-            }
-        });
-
-        function redirectToPaymentScreen(paymentMethod) {
-            let redirectUrl = '';
-
-            switch (paymentMethod) {
-                case 'pix':
-                    redirectUrl = 'checkout_pix_pg3.html';
-                    break;
-                case 'credit-card':
-                    redirectUrl = 'checkout_credit_card.html';
-                    break;
-                case 'debit-card':
-                    redirectUrl = 'checkout_debit_card.html';
-                    break;
-                case 'boleto':
-                    redirectUrl = 'checkout_boleto_pg1.html';
-                    break;
-                default:
-                    break;
-            }
-
-            if (redirectUrl !== '') {
-                window.location.href = redirectUrl;
-            }
-        }
-    });
     </script>
 </body>
 </html>
