@@ -25,9 +25,10 @@ function toggleDropdown() {
     }
 };
 
+
 const benefitsItems = document.querySelectorAll('.benefits-list li');
 
-benefitsItems.forEach(item => {
+  benefitsItems.forEach(item => {
   const title = item.querySelector('.benefit-title');
 
   title.addEventListener('click', () => {
@@ -35,8 +36,11 @@ benefitsItems.forEach(item => {
   });
 });
 
+
+
 const text = "Descubra o PowerPro: Desenvolvimento de Aplicativos Simplificado para Todos.";
 const textElement = document.getElementById("home-title");
+
 
 let index = 0;
 
@@ -45,10 +49,9 @@ function type() {
     textElement.textContent += text[index];
     index++;
   } else {
-    // Quando o texto estiver completamente digitado, adicione a barra piscante
     textElement.innerHTML += '<span id="blinking-cursor">|</span>';
     clearInterval(typingInterval);
-    setInterval(blinkCursor, 500); // Inicia a função para fazer a barra piscar
+    setInterval(blinkCursor, 500);
   }
 }
 
@@ -67,11 +70,26 @@ const meuBotao = document.getElementById('meuBotao');
 
 meuBotao.addEventListener('click', function() {
   if (autorizarCheckbox.checked) {
-    // Se o checkbox estiver marcado, define o caminho do arquivo relativo ao href do botão
     meuBotao.href = 'PowerProSitev2/PowerPro.rar.zip';
   } else {
-    alert('Para prosseguir, confirme que concorda com os termos de uso do PowerPro.');
+    alert('Por favor, autorize clicando na caixa de seleção antes de prosseguir.');
   }
+});
+
+
+
+const openModalButton = document.querySelector("#open-modal");
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
 });
 
 
