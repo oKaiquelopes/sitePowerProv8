@@ -509,15 +509,15 @@ header {
     font-size: 0.9rem;
     color: #1E1E1E;
     margin-top: 3%;
+    height: 170px;
     width: 80%;
 }
 .iconsSocial{
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 3%;
     width: 100%;
     max-height: auto;
-
 }
 .iconsSocialLink1{
     display: flex;
