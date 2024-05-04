@@ -887,6 +887,7 @@ footer h2{
     cursor: pointer;
     border: none;
 }
+
 @media (max-width: 768px) {
     .nav-bar {
         padding: 1rem 1.5rem;
