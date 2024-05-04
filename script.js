@@ -93,7 +93,7 @@ const toggleModal = () => {
 });
 
 
-var msgCookies = document.getElementById('cookies-msg')
+let msgCookies = document.getElementById('cookies-msg')
 
 function aceito() {
   localStorage.lgpd = 'sim'
